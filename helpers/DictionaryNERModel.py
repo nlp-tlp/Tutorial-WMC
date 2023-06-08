@@ -5,26 +5,7 @@ import os
 import json
 import pickle as pkl
 from abc import ABC, abstractmethod
-
-
-class NERModel(ABC):
-
-    """Abstract base class for the NER Model."""
-
-    def __init__(self):
-        pass
-
-    @abstractmethod
-    def train(self, conll_datasets_path: str):
-        pass
-
-    @abstractmethod
-    def inference(self, raw_sents: list):
-        pass
-
-    @abstractmethod
-    def load(self, model_path):
-        pass
+from .NERModel import NERModel
 
 
 class DictionaryNERModel(NERModel):
@@ -126,7 +107,6 @@ class DictionaryNERModel(NERModel):
         labels = ["O"] * len(sent)
 
         for i, t in enumerate(tokens):
-
             # If label already predicted (by a larger term),
             # move on.
             if labels[i] != "O":
@@ -191,7 +171,7 @@ class DictionaryNERModel(NERModel):
             frequency_dict (dict): The non-chunked frequency dict.
         """
         _chunked_frequency_dict = {}
-        for (phrase, label_freqs) in frequency_dict.items():
+        for phrase, label_freqs in frequency_dict.items():
             num_words = len(phrase.split(" "))
             label = max(label_freqs, key=label_freqs.get)
             if num_words not in _chunked_frequency_dict:
@@ -216,7 +196,7 @@ class DictionaryNERModel(NERModel):
 
         for doc in conll_dataset:
             phrase_labels = _get_phrase_labels(doc)
-            for (phrase, label) in phrase_labels:
+            for phrase, label in phrase_labels:
                 phrase_str = " ".join(phrase)
 
                 if phrase_str not in frequency_dict:
@@ -241,7 +221,6 @@ def _get_phrase_labels(doc: dict):
     phrase_labels = []
     current_phrase = []
     for i, (token, label) in enumerate(zip(doc["tokens"], doc["labels"])):
-
         if label.startswith("B-"):
             if len(current_phrase) > 0:
                 phrase_labels.append((current_phrase, current_label))
