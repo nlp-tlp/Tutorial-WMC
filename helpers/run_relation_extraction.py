@@ -24,7 +24,7 @@ def run_relation_extraction(tagged_bio_sents):
     relations, tagged_sents = prepare_relations(tagged_bio_sents)
     # rel_model = flair_re_model
     tagged_relations = tag_all_relations(relations)
-    return tagged_relations
+    return tagged_relations, tagged_sents
 
 
 def tag_all_relations(relations: list):

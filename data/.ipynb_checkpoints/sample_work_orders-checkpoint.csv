@@ -51,7 +51,7 @@ StartDate,FLOC,ShortText,Cost
 ,1234.02.30,capital   turbo & ex manifold guards,5100
 ,1234.02.31,capital  install access sys,5200
 ,1234.02.32,capital  modify  w/ways around eng,5300
-,1234.02.33,capital- o/haul fire sys,5400
+,1234.02.33,capital- chubb o/haul fire sys,5400
 ,1234.02.34,carousel not actioning to postion steels,5500
 ,1234.02.35,case-drain leaking,5600
 ,1234.02.36,cci,5700
@@ -482,8 +482,8 @@ StartDate,FLOC,ShortText,Cost
 ,1234.01.01,tighten loose turbo exhaust clamp,48200
 16/03/2006,1234.01.02,timing bar misaligned,48300
 ,1234.01.03,tune engine,48400
-,1234.01.04,upgrade fire suppression system,48500
-,1234.01.05,upgrade fire supprression system,48600
+,1234.01.04,upgrade chubb fire suppression system,48500
+,1234.01.05,upgrade chubb fire supprression system,48600
 ,1234.01.06,wash & clean inlet filter housing,48700
 ,1234.01.07,wash & clean inltake filter housing,48800
 ,1234.01.08,water  injection system not working,48900
