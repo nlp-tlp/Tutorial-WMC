@@ -8,9 +8,9 @@ The first half of the workshop is an overview of knowledge graphs. The slides fo
 
 ### Building Knowledge Graphs from Unstructured Text
 
-The latter half of the workshop was a walkthrough of a Jupyter notebook containing code for creating a knowledge graph from a set of sample work orders.
+The latter half of the workshop is a walkthrough of a Jupyter notebook (`WMC.ipynb`) containing code for creating a knowledge graph from a set of sample work orders.
 
-To run this code you will need Python 3 and Jupyter Notebook installed. To run the code, open `WMC.ipynb` in Jupyter.
+You can open the file and view it here on GitHub. To run this code yourself you will need Python 3 and Jupyter Notebook installed.
 
 Note that you will need Neo4j Desktop installed for Sections 8 and 9 of the notebook. You can download it [here](https://neo4j.com/download/). Once you have downloaded it, you will need to run Neo4j and create a new graph database, and run that database. Further instructions are provided in the notebook.
 
