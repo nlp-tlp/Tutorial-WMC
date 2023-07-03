@@ -1,6 +1,6 @@
 ## WMC Tutorial - A Practical Guide to Knowledge Graph Construction from Technical Short Text
 
-This is the repository for the practical session of the WMC Turorial by Dr Michael Stewart from the University of Western Australia (supported by the Centre for Transforming Maintenance through Data Science (CTMTDS)).
+This is the repository for the practical session of the WMC Turorial by the University of Western Australia (supported by the Centre for Transforming Maintenance through Data Science (CTMTDS)).
 
 We will be walking through a Jupyter notebook containing code for creating a knowledge graph from a set of sample work orders.
 
