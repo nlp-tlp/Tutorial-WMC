@@ -12,7 +12,7 @@ The latter half of the workshop is a walkthrough of a Jupyter notebook (`WMC.ipy
 
 You can open the file and view it here on GitHub. To run this code yourself you will need Python 3 and Jupyter Notebook installed.
 
-Note that you will need Neo4j Desktop installed for Sections 8 and 9 of the notebook. You can download it [here](https://neo4j.com/download/). Once you have downloaded it, you will need to run Neo4j and create a new graph database, and run that database. Further instructions are provided in the notebook.
+Note that you will need Neo4j Desktop installed for Sections 4 and 5 of the notebook. You can download it [here](https://neo4j.com/download/). Once you have downloaded it, you will need to run Neo4j and create a new graph database, and run that database. Further instructions are provided in the notebook.
 
 ### Contact
 
